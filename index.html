@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les 05 · Alles op een rij · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-storage="novadepot_tv4_v1_" data-laatste-stap="6">
+
+<!-- Pictogrammen: eenvoudige lijntekeningen, eigen werk. Gebruik: een svg met class "ic" en daarin use met href naar het symbool. -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h12l-2.5 4 2.5 4H5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 10"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01" stroke-width="3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9.5 17h-19z"/><path d="M12 10v4.5M12 17.5h.01"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.5c-.6.3-1 .8-1 1.5v.4M12 17h.01"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M4 14v6h16v-6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9l-5.2 2.8 1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1"/><path d="M3.5 4v4.5H8"/><path d="M12 8v4.5l3 2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2a5 5 0 0 1 5 5"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M3 14.5h18M9 4v16M15 4v16"/></symbol>
+  <symbol id="i-rows" viewBox="0 0 24 24"><rect x="3" y="4" width="13" height="16" rx="1.5"/><path d="M3 9.5h13M3 15h13"/><path d="M19.5 9v6M16.5 12h6"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><path d="M4 20c2.5 0 3.5-1.2 3.5-3a2.2 2.2 0 1 1 4.4 0c0 3-3.6 4.6-7.9 3z"/><path d="M10.6 15.2L20 5.8 18.2 4l-9.4 9.4"/></symbol>
+  <symbol id="i-spaces" viewBox="0 0 24 24"><path d="M4 7h4M11 7h9M4 12h7M14 12h6M4 17h3M12 17h8"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M7 4v16M4 17l3 3 3-3"/><path d="M17 20V4M14 7l3-3 3 3"/></symbol>
+</svg>
+
+<div class="teacher-banner">Leraarweergave: de roze kaders tonen waar je een screenshot kan plaatsen. Leerlingen zien die kaders niet.</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" title="Naar het begin van de les">
+      <img src="assets/novadepot-logo.svg" alt="NovaDepot">
+      <span class="brand-lesson">Les 05 · Alles op een rij</span>
+    </a>
+    <span class="topbar-spacer"></span>
+    <img class="dalton-mark" src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent">
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ LINKS: de route ============ -->
+  <nav class="route" aria-label="Stappenplan">
+    <p class="route-title">Stappenplan</p>
+    <button class="nav-btn" type="button" data-step="start"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-flag"/></svg></span><span class="nav-lbl">Start</span></button>
+    <button class="nav-btn" type="button" data-step="theorie"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><span class="nav-lbl">Theoriekaart</span></button>
+
+    <p class="route-group">Deel A: de leveringen</p>
+    <button class="nav-btn" type="button" data-step="1"><span class="nav-num"><span class="nav-n">1</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Klaarzetten</span></button>
+    <button class="nav-btn" type="button" data-step="2"><span class="nav-num"><span class="nav-n">2</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De tabel invullen</span></button>
+    <button class="nav-btn" type="button" data-step="3"><span class="nav-num"><span class="nav-n">3</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Rijen en kolommen</span></button>
+    <button class="nav-btn" type="button" data-step="4"><span class="nav-num"><span class="nav-n">4</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">De tabel opmaken</span></button>
+
+    <p class="route-group">Deel B en inleveren</p>
+    <button class="nav-btn" type="button" data-step="5"><span class="nav-num"><span class="nav-n">5</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Zelf een tabel maken</span></button>
+    <button class="nav-btn" type="button" data-step="6"><span class="nav-num"><span class="nav-n">6</span><svg class="ic nav-check" aria-hidden="true"><use href="#i-check"/></svg></span><span class="nav-lbl">Controleren en inleveren</span></button>
+    <button class="nav-btn extra" type="button" data-step="extra"><span class="nav-num"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><span class="nav-lbl">Extra</span></button>
+  </nav>
+
+  <!-- ============ MIDDEN: één stap tegelijk ============ -->
+  <main id="main">
+
+    <!-- ===== START ===== -->
+    <section class="pane" id="pane-start" aria-labelledby="h-start">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Toegepaste Informatica · les 05</span></div>
+          <h1 id="h-start">Alles op een rij</h1>
+        </header>
+        <div class="card-body">
+          <p class="intro">Bij NovaDepot komen elke dag leveringen binnen. Vandaag zet jij ze overzichtelijk in een tabel, en je maakt een deelnemerslijst voor de infosessie van de jobstudenten.</p>
+
+          <h2 class="sec">Zo werk je</h2>
+          <div class="werkwijze">
+            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg><strong>Lees hier</strong><span>Deze pagina staat links op je scherm.</span></div>
+            <div class="werk-tegel"><svg class="ic" aria-hidden="true"><use href="#i-table"/></svg><strong>Werk in je werkdocument</strong><span>Rechts op je scherm. Deel A en deel B.</span></div>
+            <div class="werk-tegel inleveren"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg><strong>Lever je werkdocument in</strong><span>Dat is het enige. Niets anders.</span></div>
+          </div>
+
+          <h2 class="sec">Na deze les kan je</h2>
+          <ul class="doelen">
+            <li>een tabel invullen, en er rijen en kolommen bij zetten of uit halen;</li>
+            <li>een tabel opmaken: een koprij, getallen in het midden en kolommen op de juiste breedte;</li>
+            <li>zelf een tabel maken, zoals een deelnemerslijst.</li>
+          </ul>
+
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Vast?</strong> Kijk eerst op de theoriekaart. Open dan <em>Hulp nodig?</em> onder de stap. Vraag het daarna aan je buur, en pas dan aan je leraar.</p></div>
+
+          <p class="start-cta"><button class="btn btn-primary" type="button" data-goto="1">Start met stap 1 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== THEORIEKAART ===== -->
+    <section class="pane" id="pane-theorie" aria-labelledby="h-theorie">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-where">Spiekbriefje</span></div>
+          <h2 id="h-theorie">Theoriekaart</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Alles op één plek. Kom hier terug als je iets niet meer weet.</p>
+
+          <div class="t-grid">
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-table"/></svg>Een tabel lezen</h3>
+              <table class="vb-tabel" aria-label="Voorbeeld van een tabel met een koprij, een rij, een kolom en een cel">
+                <thead><tr><th>Uur</th><th class="kol">Leverancier</th><th>Pallets</th></tr></thead>
+                <tbody>
+                  <tr><td>7.30</td><td class="kol">Bakkerij Korstjes</td><td class="num">2</td></tr>
+                  <tr class="rij"><td>8.15</td><td class="kol">Papierhandel Vellekens</td><td class="num cel">4</td></tr>
+                </tbody>
+              </table>
+              <ul class="vb-legende">
+                <li class="l-kop"><strong>koprij</strong>: zegt wat er in elke kolom staat</li>
+                <li class="l-rij"><strong>rij</strong>: ligt, van links naar rechts</li>
+                <li class="l-kol"><strong>kolom</strong>: staat, van boven naar onder</li>
+                <li class="l-cel"><strong>cel</strong>: één vakje</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-table"/></svg>Een tabel maken</h3>
+              <ul>
+                <li><span class="ui">Invoegen</span> › <span class="ui">Tabel</span>, en kies hoeveel kolommen en rijen.</li>
+                <li>Typen: klik in een cel.</li>
+                <li>In elke cel maar één ding: een uur, een naam of een getal.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-rows"/></svg>Rijen en kolommen</h3>
+              <p>Klik met de rechtermuisknop in een cel:</p>
+              <ul>
+                <li><span class="ui">Rij boven invoegen</span> · <span class="ui">Rij onder invoegen</span></li>
+                <li><span class="ui">Kolom links invoegen</span> · <span class="ui">Kolom rechts invoegen</span></li>
+                <li><span class="ui">Rij verwijderen</span> · <span class="ui">Kolom verwijderen</span></li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-brush"/></svg>Een tabel opmaken</h3>
+              <ul>
+                <li>Cellen selecteren: sleep erover met de muis.</li>
+                <li>Vet: <span class="key">Ctrl</span> + <span class="key">B</span> · kleur: <span class="ui">Achtergrondkleur</span> in de werkbalk.</li>
+                <li>In het midden: <span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">E</span></li>
+                <li>Kolom breder: sleep de rasterlijn als je een dubbele pijl ziet.</li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-table"/></svg>Tabelkaart NovaDepot</h3>
+              <table class="t-rows">
+                <tr><th>Titel</th><td>boven de tabel, vet</td></tr>
+                <tr><th>Koprij</th><td>vet, lichtblauwe achtergrond</td></tr>
+                <tr><th>Tekst</th><td>links</td></tr>
+                <tr><th>Getallen</th><td>in het midden</td></tr>
+                <tr><th>Breedte</th><td>elke naam op één regel</td></tr>
+                <tr><th>Lege rijen</th><td>geen</td></tr>
+              </table>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-spaces"/></svg>Tabel of spaties?</h3>
+              <p>Kolommen maken met spaties of de Tab-toets lijkt te werken, tot de tekst verandert. Dan schuift alles.</p>
+              <p><strong>Een tabel houdt elke kolom op zijn plaats.</strong> Dezelfde regel als in les 02: nooit spaties om tekst te verschuiven.</p>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-history"/></svg>Uit les 04</h3>
+              <ul>
+                <li>Pagina: <span class="ui">Bestand</span> › <span class="ui">Pagina-instelling</span> · staand, A4, 2 cm.</li>
+                <li>Koptekst: <span class="ui">Invoegen</span> › <span class="ui">Pagina-elementen</span> › <span class="ui">Koptekst</span></li>
+                <li>Nieuwe pagina: <span class="key">Ctrl</span> + <span class="key">Enter</span> · pdf: <span class="ui">Bestand</span> › <span class="ui">Downloaden</span></li>
+              </ul>
+            </section>
+
+            <section class="t-card">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-sort"/></svg>Sorteren (extra)</h3>
+              <ul>
+                <li>Eerst de koprij vastzetten: rechtsklik › <span class="ui">Kop vastzetten tot deze rij</span>. Anders sorteert die mee.</li>
+                <li>Dan: rechtsklik › <span class="ui">Tabel sorteren</span> › <span class="ui">Tabel sorteren in oplopende volgorde</span></li>
+              </ul>
+            </section>
+
+            <section class="t-card wide">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Woorden</h3>
+              <table class="t-rows">
+                <tr><th>tabel</th><td>gegevens in rijen en kolommen</td></tr>
+                <tr><th>rij</th><td>de vakjes naast elkaar, van links naar rechts</td></tr>
+                <tr><th>kolom</th><td>de vakjes onder elkaar, van boven naar onder</td></tr>
+                <tr><th>cel</th><td>één vakje van een tabel</td></tr>
+                <tr><th>koprij</th><td>de eerste rij: zegt wat er in elke kolom staat</td></tr>
+                <tr><th>rasterlijn</th><td>de lijn tussen twee rijen of twee kolommen</td></tr>
+              </table>
+            </section>
+
+            <section class="t-card wide warn">
+              <h3><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Veelgemaakte fouten</h3>
+              <ul>
+                <li>De verkeerde rij verwijderd. Druk meteen op <span class="key">Ctrl</span> + <span class="key">Z</span>.</li>
+                <li>Lege rijen laten staan onderaan de tabel.</li>
+                <li>Maar één cel van de koprij opgemaakt in plaats van de hele rij.</li>
+                <li>Een naam op twee regels, omdat de kolom te smal is.</li>
+                <li>De titel in de tabel getypt in plaats van erboven.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== STAP 1 ===== -->
+    <section class="pane" id="pane-1" aria-labelledby="h-1">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 1</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg> Classroom en werkdocument</span></div>
+          <h2 id="h-1">Klaarzetten</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Je werkt vandaag in je werkdocument. Zet eerst alles klaar.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Open in Classroom de opdracht <strong>Tekstverwerking 4 — Alles op een rij</strong>.</li>
+              <li>Open je werkdocument <strong>TV4_Tabellen</strong>. Zet het rechts en deze lespagina links.</li>
+              <li>Klik bovenaan in het vak achter <em>Naam:</em> en typ je naam. Doe hetzelfde bij <em>Klas:</em> en <em>Datum:</em>.</li>
+            </ol>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Zie je het?</strong> Die drie vakjes bovenaan zijn ook een tabel: één rij en drie kolommen.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Typ je naast het vak in plaats van erin? Klik precies in het vak, achter het woord.</p>
+              <p>Passen je vensters niet naast elkaar? Werk dan met twee tabbladen en wissel met een klik.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> links de lespagina staat, rechts je werkdocument, en je naam, klas en datum bovenaan ingevuld zijn.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="start"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Start</button>
+          <button class="btn btn-primary" type="button" data-goto="2">Stap 2 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 2 ===== -->
+    <section class="pane" id="pane-2" aria-labelledby="h-2">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 2</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel A</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Vraag 1</span></div>
+          <h2 id="h-2">De tabel invullen</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Tom wil de leveringen van dinsdag in één overzicht. Het onthaal schreef ze in zinnen: jij zet ze in de tabel.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Lees het briefje van het onthaal in deel A.</li>
+              <li>Kijk naar rij 1: die deed je leraar voor. In elke cel staat maar één ding.</li>
+              <li>Klik in de eerste cel van rij 2. Typ <code>8.15</code>.</li>
+              <li>Klik in de cel ernaast en typ de leverancier. Vul zo ook de pallets en de poort in.</li>
+              <li>Vul rij 3 tot 6 in, in de volgorde van het briefje.</li>
+              <li>Beantwoord vraag 1.</li>
+            </ol>
+            <table class="vb-tabel" aria-label="Rij 1 van de tabel, zoals je leraar hem voordeed">
+              <thead><tr><th>Uur</th><th>Leverancier</th><th>Pallets</th><th>Poort</th></tr></thead>
+              <tbody><tr><td>7.30</td><td>Bakkerij Korstjes</td><td>2</td><td>3</td></tr></tbody>
+            </table>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Typ geen woorden als <em>om</em>, <em>uur</em> of <em>pallets</em> in de tabel.</strong> Die staan al in de koprij.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Welke cel is de volgende? De cel rechts ernaast. Na de poort ga je naar de eerste cel van de volgende rij.</p>
+              <p>Een fout getypt? Klik in de cel en verbeter het, zoals in gewone tekst.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> rij 1 tot 6 ingevuld zijn en er in elke cel maar één ding staat.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="1"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 1</button>
+          <button class="btn btn-primary" type="button" data-goto="3">Stap 3 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 3 ===== -->
+    <section class="pane" id="pane-3" aria-labelledby="h-3">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 3</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel A</span></div>
+          <h2 id="h-3">Rijen en kolommen</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Om 8 uur belt het onthaal met drie wijzigingen. Ze staan onder je tabel. Een tabel pas je aan zonder opnieuw te beginnen.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Frisdranken Bubbel komt niet. Klik met de rechtermuisknop in die rij › <span class="ui">Rij verwijderen</span>.</li>
+              <li>Er komt een levering bij om 11.15 uur. Klik met de rechtermuisknop in de rij van 10.30 uur › <span class="ui">Rij onder invoegen</span>.</li>
+              <li>Typ de nieuwe levering in de lege rij: <code>11.15</code> · Tuincentrum Groenvinger · <code>2</code> · <code>3</code>.</li>
+              <li>Klik met de rechtermuisknop in de kolom <em>Poort</em> › <span class="ui">Kolom rechts invoegen</span>. Typ <code>Afgetekend</code> in de bovenste cel.</li>
+            </ol>
+            <figure class="shot" data-shot="stap3-rechtsklik-tabel.png" data-caption="Rechtsklik in een cel van de tabel." data-alt="Het rechtermuisknopmenu in een tabel, met Rij boven invoegen, Rij onder invoegen, Kolom links invoegen, Kolom rechts invoegen en Rij verwijderen."></figure>
+          </div>
+          <div class="tip warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><p><strong><span class="ui">Rij verwijderen</span> wist de hele rij.</strong> Kijk eerst goed in welke rij je klikt. Mis? Druk op <span class="key">Ctrl</span> + <span class="key">Z</span>.</p></div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Zie je <span class="ui">Rij verwijderen</span> niet? Klik met de rechtermuisknop ín een cel van de tabel, niet ernaast.</p>
+              <p>Staat de nieuwe rij op de verkeerde plaats? Druk op <span class="key">Ctrl</span> + <span class="key">Z</span> en klik opnieuw in de rij van 10.30 uur.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> je tabel zes leveringen telt, op volgorde van het uur, en rechts een lege kolom <em>Afgetekend</em> heeft.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="2"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 2</button>
+          <button class="btn btn-primary" type="button" data-goto="4">Stap 4 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 4 ===== -->
+    <section class="pane" id="pane-4" aria-labelledby="h-4">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 4</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Werkdocument, deel A</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Vraag 2</span></div>
+          <h2 id="h-4">De tabel opmaken</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Tom hangt de lijst aan de muur. Met een duidelijke koprij en nette kolommen lees je ze in één oogopslag.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Selecteer de koprij: sleep met de muis van <em>Uur</em> tot <em>Afgetekend</em>. Maak ze vet met <span class="key">Ctrl</span> + <span class="key">B</span>.</li>
+              <li>Klik in de werkbalk op <span class="ui">Achtergrondkleur</span> en kies een lichtblauwe kleur.</li>
+              <li>Selecteer de getallen in de kolommen <em>Pallets</em> en <em>Poort</em>. Zet ze in het midden met <span class="key">Ctrl</span> + <span class="key">Shift</span> + <span class="key">E</span>.</li>
+              <li>Staat een naam op twee regels? Wijs de rasterlijn rechts van <em>Leverancier</em> aan tot je een dubbele pijl ziet. Sleep naar rechts.</li>
+              <li>Beantwoord vraag 2.</li>
+            </ol>
+            <figure class="shot" data-shot="stap4-achtergrondkleur.png" data-caption="Achtergrondkleur in de werkbalk, met de koprij geselecteerd." data-alt="De werkbalk van Google Documenten met de knop Achtergrondkleur open en de koprij van de tabel geselecteerd."></figure>
+            <figure class="shot" data-shot="knop-uitlijnen.png" data-caption="Of met de knop Uitlijnen: centreren is het tweede knopje." data-alt="De knop Uitlijnen in de werkbalk van Google Documenten, opengeklapt: links, centreren, rechts en uitvullen."></figure>
+          </div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Zie je <span class="ui">Achtergrondkleur</span> niet? Selecteer eerst de cellen. Is je venster te smal, klik dan rechts in de werkbalk op ⋮.</p>
+              <p>Werd maar één cel gekleurd? Selecteer de hele koprij opnieuw: sleep van de eerste tot de laatste cel.</p>
+              <p>Wordt een andere kolom te smal? Sleep de rasterlijn tussen die kolommen een beetje terug.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> de koprij vet en lichtblauw is, de getallen in het midden staan en elke naam op één regel past.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="3"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 3</button>
+          <button class="btn btn-primary" type="button" data-goto="5">Stap 5 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 5 ===== -->
+    <section class="pane" id="pane-5" aria-labelledby="h-5">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 5</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg> Werkdocument, deel B</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Vraag 3</span></div>
+          <h2 id="h-5">Zelf een tabel maken</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Nu maak je zelf een tabel, van begin tot einde: de deelnemerslijst voor de infosessie. Je gebruikt alleen de tabelkaart.</p>
+
+          <div class="nameplate">
+            <div class="nameplate-head">Tabelkaart NovaDepot</div>
+            <div class="nameplate-body">
+              <table class="t-rows">
+                <tr><th>Titel</th><td>boven de tabel, vet</td></tr>
+                <tr><th>Koprij</th><td>vet, lichtblauwe achtergrond</td></tr>
+                <tr><th>Tekst</th><td>links</td></tr>
+                <tr><th>Getallen</th><td>in het midden</td></tr>
+                <tr><th>Breedte</th><td>elke naam op één regel</td></tr>
+                <tr><th>Lege rijen</th><td>geen</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Klik op de lege regel onder <em>▶ Maak hier je deelnemerslijst</em>.</li>
+              <li>Typ de titel <code>Deelnemerslijst infosessie jobstudenten</code>. Druk op <span class="key">Enter</span>.</li>
+              <li>Klik op <span class="ui">Invoegen</span> › <span class="ui">Tabel</span>. Kies 3 kolommen en 6 rijen.</li>
+              <li>Typ in de koprij <code>Naam</code>, <code>Afdeling</code> en <code>Handtekening</code>. Vul de vijf jobstudenten uit het mailtje in.</li>
+              <li>Maak alles op volgens de tabelkaart. Beantwoord vraag 3.</li>
+            </ol>
+          </div>
+          <details class="help"><summary><svg class="ic" aria-hidden="true"><use href="#i-help"/></svg> Hulp nodig?</summary>
+            <div class="help-body">
+              <p>Hoe kies je 3 kolommen en 6 rijen? Beweeg over de vakjes: 3 naar rechts en 6 naar beneden. Klik dan.</p>
+              <p>Een rij te veel of te weinig? Rechtsklik in een cel › <span class="ui">Rij verwijderen</span> of <span class="ui">Rij onder invoegen</span>.</p>
+              <p>De kolom <em>Handtekening</em> blijft leeg: daar tekenen de jobstudenten op papier.</p>
+              <p>Weet je niet meer hoe iets moet? Kijk terug naar stap 3 of 4.</p>
+            </div>
+          </details>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> onder je titel een tabel staat met drie kolommen en zes rijen, opgemaakt zoals de tabelkaart.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="4"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 4</button>
+          <button class="btn btn-primary" type="button" data-goto="6">Stap 6 <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== STAP 6 ===== -->
+    <section class="pane" id="pane-6" aria-labelledby="h-6">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-step">Stap 6</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg> Classroom</span><span class="tag tag-where"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg> Vraag 4</span></div>
+          <h2 id="h-6">Controleren en inleveren</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Bijna klaar. Test eerst of je het onthouden hebt. Er wordt niets bewaard.</p>
+
+          <div class="quiz">
+            <div class="quiz-q" data-ok="Juist. Een tabel houdt elke kolom op zijn plaats, ook als de tekst verandert." data-nok="Nog niet. Spaties en tabs schuiven op zodra de tekst verandert.">
+              <p>1. Je wil een lijst netjes in kolommen zetten. Wat gebruik je?</p>
+              <div class="opts">
+                <button type="button">Spaties, tot het past.</button>
+                <button type="button">De Tab-toets.</button>
+                <button type="button" data-right>Een tabel.</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist. Rechtsklik in de rij ernaast, en kies boven of onder." data-nok="Nog niet. Denk aan stap 3.">
+              <p>2. Er komt een levering bij, tussen twee andere. Wat doe je?</p>
+              <div class="opts">
+                <button type="button">Ik typ ze onder de tabel.</button>
+                <button type="button" data-right>Rechtsklik › Rij boven invoegen of Rij onder invoegen.</button>
+                <button type="button">Ik maak een nieuwe tabel.</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+            <div class="quiz-q" data-ok="Juist. De koprij zegt wat er in elke kolom staat, en valt meteen op." data-nok="Nog niet. Kijk op de theoriekaart bij Een tabel lezen.">
+              <p>3. Waarom is de koprij vet en gekleurd?</p>
+              <div class="opts">
+                <button type="button">Omdat Google dat verplicht.</button>
+                <button type="button" data-right>Zodat je meteen ziet wat er in elke kolom staat.</button>
+                <button type="button">Zodat de tabel groter wordt.</button>
+              </div>
+              <p class="feedback" role="status"></p>
+            </div>
+          </div>
+
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat moet je doen?</h3>
+            <ol class="todo">
+              <li>Loop de <strong>checklist</strong> na. Staat er nog iets open? Werk het eerst af.</li>
+              <li>Beantwoord vraag 4 in je werkdocument.</li>
+              <li>Klik in Classroom op <span class="ui">Inleveren</span>.</li>
+            </ol>
+          </div>
+          <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><p><strong>Niet helemaal af?</strong> Lever toch in. Schrijf onder <span class="ui">Privéreacties</span> tot welke stap je kwam en klik op <span class="ui">Posten</span>.</p></div>
+          <p class="result"><svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg><span><strong>Klaar als:</strong> er in Classroom <em>Ingeleverd</em> staat bij je opdracht.</span></p>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="5"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 5</button>
+          <button class="btn btn-primary" type="button" data-goto="extra">Extra <svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </footer>
+      </article>
+    </section>
+
+    <!-- ===== EXTRA ===== -->
+    <section class="pane" id="pane-extra" aria-labelledby="h-extra">
+      <article class="card">
+        <header class="card-head">
+          <div class="tags"><span class="tag tag-extra">Extra · niet verplicht</span></div>
+          <h2 id="h-extra">Voor wie klaar is</h2>
+        </header>
+        <div class="card-body">
+          <p class="intro">Begin hier pas nadat je hebt ingeleverd. Klik in Classroom op <span class="ui">Inleveren ongedaan maken</span>. Lever daarna opnieuw in.</p>
+          <div class="todo-box">
+            <h3><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg> Wat kan je doen?</h3>
+            <ol class="todo">
+              <li><strong>Op alfabet.</strong> Klik met de rechtermuisknop in de koprij van je deelnemerslijst › <span class="ui">Kop vastzetten tot deze rij</span>. Klik daarna met de rechtermuisknop in de kolom <em>Naam</em> › <span class="ui">Tabel sorteren</span> › <span class="ui">Tabel sorteren in oplopende volgorde</span>.</li>
+              <li><strong>Meer plaats om te tekenen.</strong> Selecteer de vijf rijen van de jobstudenten. Klik met de rechtermuisknop › <span class="ui">Tabelopties</span>. Vul bij <em>Rij</em> een hoogte van 1 cm in en klik op <span class="ui">OK</span>.</li>
+            </ol>
+          </div>
+        </div>
+        <footer class="card-nav">
+          <button class="btn" type="button" data-goto="6"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg> Stap 6</button>
+          <button class="btn" type="button" data-goto="start">Naar het begin</button>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <!-- ============ RECHTS: de checklist ============ -->
+  <aside class="checklist leeg" id="checklist" aria-labelledby="h-cl">
+    <div class="cl-head">
+      <h2 id="h-cl">Checklist</h2>
+      <div class="cl-bar" role="progressbar" aria-label="Voortgang" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="cl-fill" id="clFill"></div></div>
+      <p class="cl-count" id="clCount">0 van 0 klaar</p>
+    </div>
+    <div class="cl-body">
+      <div class="cl-group" data-step="1"><h3>1 · Klaarzetten</h3>
+        <label class="cl-item"><input type="checkbox" id="c1a"><span>Lespagina links, werkdocument rechts</span></label>
+        <label class="cl-item"><input type="checkbox" id="c1b"><span>Naam, klas en datum bovenaan ingevuld</span></label>
+      </div>
+      <div class="cl-group" data-step="2"><h3>2 · De tabel invullen</h3>
+        <label class="cl-item"><input type="checkbox" id="c2a"><span>Rij 2 tot 6 ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2b"><span>In elke cel maar één ding</span></label>
+        <label class="cl-item"><input type="checkbox" id="c2c"><span>Vraag 1 ingevuld</span></label>
+      </div>
+      <div class="cl-group" data-step="3"><h3>3 · Rijen en kolommen</h3>
+        <label class="cl-item"><input type="checkbox" id="c3a"><span>Frisdranken Bubbel is weg</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3b"><span>11.15 uur staat tussen 10.30 en 13.00</span></label>
+        <label class="cl-item"><input type="checkbox" id="c3c"><span>Kolom Afgetekend rechts</span></label>
+      </div>
+      <div class="cl-group" data-step="4"><h3>4 · De tabel opmaken</h3>
+        <label class="cl-item"><input type="checkbox" id="c4a"><span>Koprij vet</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4b"><span>Koprij lichtblauw</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4c"><span>Getallen in het midden</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4d"><span>Elke naam op één regel</span></label>
+        <label class="cl-item"><input type="checkbox" id="c4e"><span>Vraag 2 ingevuld</span></label>
+      </div>
+      <div class="cl-group" data-step="5"><h3>5 · Zelf een tabel maken</h3>
+        <label class="cl-item"><input type="checkbox" id="c5a"><span>Titel boven de tabel, vet</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5b"><span>3 kolommen en 6 rijen</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5c"><span>Vijf jobstudenten ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5d"><span>Opgemaakt volgens de tabelkaart</span></label>
+        <label class="cl-item"><input type="checkbox" id="c5e"><span>Vraag 3 ingevuld</span></label>
+      </div>
+      <div class="cl-group" data-step="6"><h3>6 · Controleren en inleveren</h3>
+        <label class="cl-item"><input type="checkbox" id="c6a"><span>Zelftest gedaan</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6b"><span>Vraag 4 ingevuld</span></label>
+        <label class="cl-item"><input type="checkbox" id="c6c"><span>Ingeleverd in Classroom</span></label>
+      </div>
+    </div>
+    <div class="cl-foot">
+      <button class="btn cl-toggle" type="button" id="clToggle" aria-expanded="false">Toon alles</button>
+      <button class="btn" type="button" id="btnReset">Vinkjes wissen</button>
+      <p class="cl-note">Je vinkjes staan alleen op dit toestel. Er wordt niets doorgestuurd.</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ Klaar! ============ -->
+<div class="klaar-overlay" id="klaar" role="dialog" aria-modal="true" aria-labelledby="h-klaar" hidden>
+  <div class="klaar-card">
+    <svg class="ic" aria-hidden="true"><use href="#i-check-circle"/></svg>
+    <h2 id="h-klaar">Alles staat op een rij!</h2>
+    <p>Alles is afgevinkt. Heb je nog tijd? Kijk dan bij <strong>Extra</strong>.</p>
+    <p>Tabellen kom je vaak tegen: in een rooster, een prijslijst of een bestelbon. Nu weet je hoe je er een maakt.</p>
+    <button class="btn btn-primary" type="button" id="klaarSluit">Sluiten</button>
+  </div>
+</div>
+
+<footer class="site">
+  Toegepaste Informatica · GO! Dalton Gent · 2de graad Organisatie en logistiek · NovaDepot is een fictief bedrijf. Alle namen, leveranciers en cijfers zijn verzonnen.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

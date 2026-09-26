@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alles op een rij · dia's · NovaDepot</title>
+  <link rel="icon" href="assets/novadepot-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    .mono { font-family: "Courier New", monospace; font-size: 25px; font-weight: 700; }
+    .qhead { font-size: 30px; font-weight: 700; margin: 0 0 6px; }
+    .qcol .opt { font-size: 26px; padding: 8px 16px; }
+    .qcol .opt .n { width: 46px; height: 46px; font-size: 24px; }
+    .steps2 { columns: 2; column-gap: 40px; margin: 0; }
+    .steps2 li { font-size: 25px; margin-bottom: 6px; break-inside: avoid; }
+    .klok { font-size: 22px; color: #4D5573; }
+    .compact .two { flex: 0 0 auto; }
+    .compact .panel p { margin-bottom: 10px; }
+    .compact .panel p:last-child { margin-bottom: 0; }
+    .compact .panel ul { margin: 0; }
+    .compact .panel li { font-size: 24px; margin-bottom: 4px; }
+    /* Het briefje en de tabel (dia 4) */
+    .briefje { background: #FFF7E3; border-left: 8px solid #E0B040; border-radius: 8px; padding: 16px 20px; font-family: Arial, sans-serif; }
+    .briefje p { font-size: 19px !important; font-style: italic; margin: 0 0 4px; line-height: 1.35; }
+    .briefje p b { font-style: normal; }
+    .tabel { border-collapse: collapse; background: #fff; font-family: Arial, sans-serif; width: 100%; }
+    .tabel th, .tabel td { border: 2px solid #9AA3C7; padding: 6px 10px; font-size: 20px; text-align: left; }
+    .tabel th { background: #DCE1F4; color: var(--navy-deep); }
+    .tabel td.num { text-align: center; }
+    .lbl { font-weight: 700; font-size: 22px !important; margin: 0 0 8px; color: var(--navy-deep); }
+  </style>
+</head>
+<body>
+<div class="hud"><span id="counter"></span> · <kbd>→</kbd> verder · <kbd>F</kbd> volledig scherm · <kbd>N</kbd> notities</div>
+<div class="deck"><div class="stage">
+
+<!-- 1 -->
+<section class="slide title">
+  <p class="kicker" style="color:var(--blush)">Toegepaste Informatica · les 05</p>
+  <h1>Alles<br>op een rij</h1>
+  <p>Tabellen · NovaDepot</p>
+  <div class="logos"><img src="assets/novadepot-logo.svg" alt="NovaDepot"><img src="assets/dalton-gent-logo.png" alt="GO! Dalton Gent"></div>
+  <template class="note"><p><strong>Lesstart (0–1').</strong> Laat de computers opstarten en aanmelden terwijl deze dia op het bord staat. Ga verder zodra de meesten aangemeld zijn.</p></template>
+</section>
+
+<!-- 2 -->
+<section class="slide" data-answer>
+  <p class="kicker">Lesstart · 3 minuten</p>
+  <h2>Weet je het nog? (les 04)</h2>
+  <div class="two">
+    <div class="qcol">
+      <p class="qhead">1. Deel 2 moet op een nieuwe pagina. Wat doe je?</p>
+      <div class="opts">
+        <div class="opt"><span class="n">A</span>Enter tot het past.</div>
+        <div class="opt right"><span class="n">B</span>Een pagina-einde.</div>
+        <div class="opt"><span class="n">C</span>De marges groter maken.</div>
+      </div>
+    </div>
+    <div class="qcol">
+      <p class="qhead">2. Tekst op elke pagina: waar zet je die?</p>
+      <div class="opts">
+        <div class="opt"><span class="n">A</span>Bovenaan pagina 1.</div>
+        <div class="opt right"><span class="n">B</span>In de koptekst.</div>
+        <div class="opt"><span class="n">C</span>In een tabel.</div>
+      </div>
+    </div>
+  </div>
+  <p class="answer">Pagina-einde: Ctrl + Enter · koptekst: Invoegen › Pagina-elementen › Koptekst. Vandaag: nooit spaties om kolommen te maken.</p>
+  <template class="note">
+    <p><strong>Lesstart (3'), retrieval van les 04.</strong> Iedereen antwoordt tegelijk met vingers: 1, 2 of 3 vingers voor A, B of C. Eerst vraag 1, dan vraag 2. Druk daarna op → voor de antwoorden.</p>
+    <p>Doorvraag bij vraag 1: <em>"Waarom geen Enters? Wat gebeurde er in stap 2 van vorige les?"</em> (Deel 2 verschoof toen de marges veranderden.) Dezelfde reden geldt vandaag voor spaties tussen kolommen.</p>
+    <p>Welke stap noemden de meesten bij vraag 4 van les 04 als moeilijkst? Zeg het kort en geef één tip.</p>
+  </template>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <p class="kicker">Ik doe · dia 1 van 4</p>
+  <h2>Wat kan je straks?</h2>
+  <ul class="rules">
+    <li>Je zet gegevens uit een briefje in een <strong>tabel</strong>.</li>
+    <li>Je voegt <strong>rijen en kolommen</strong> toe en je haalt ze weg.</li>
+    <li>Je maakt een tabel op: <strong>koprij</strong>, getallen in het midden, de juiste <strong>breedte</strong>.</li>
+    <li>Je maakt zelf een <strong>deelnemerslijst</strong>.</li>
+  </ul>
+  <p class="klok" style="margin-top:6px">Ik leg 5 minuten uit. Daarna werk jij zelfstandig met de lespagina, en kom ik bij jou langs.</p>
+  <template class="note"><p><strong>Ik doe, 0'30".</strong> Lesdoel voorlezen, niet toelichten. Zeg er meteen bij dat de uitleg maar vijf minuten duurt en dat alles daarna op de lespagina staat.</p></template>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <p class="kicker">Ik doe · dia 2 van 4</p>
+  <h2>Van een briefje … naar een tabel</h2>
+  <div class="two">
+    <div>
+      <p class="lbl">Het briefje van het onthaal</p>
+      <div class="briefje">
+        <p><b>Dinsdag 13 oktober</b></p>
+        <p>Om 7.30 uur brengt Bakkerij Korstjes 2 pallets naar poort 3.</p>
+        <p>Om 8.15 uur brengt Papierhandel Vellekens 4 pallets naar poort 4.</p>
+        <p>Om 10.30 uur brengt Koffiebranderij De Bonenbaas 1 pallet naar poort 4.</p>
+        <p>…</p>
+      </div>
+    </div>
+    <div>
+      <p class="lbl">De tabel voor Tom</p>
+      <table class="tabel">
+        <tr><th>Uur</th><th>Leverancier</th><th>Pallets</th><th>Poort</th></tr>
+        <tr><td>7.30</td><td>Bakkerij Korstjes</td><td class="num">2</td><td class="num">3</td></tr>
+        <tr><td>8.15</td><td>Papierhandel Vellekens</td><td class="num">4</td><td class="num">4</td></tr>
+        <tr><td>10.30</td><td>Koffiebranderij De Bonenbaas</td><td class="num">1</td><td class="num">4</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="reveal-item" style="margin-top:16px"><strong>Hoeveel pallets gaan er naar poort 4?</strong> Waar zie je het sneller: links of rechts?</p>
+  <template class="note">
+    <p><strong>Ik doe, 1'.</strong> Toon het eindproduct. Zeg: <em>"Tom hangt dit aan de muur van de ontvangstzone. Een chauffeur moet het in twee seconden kunnen lezen."</em></p>
+    <p>Druk op → voor de vraag. Laat de klas even zoeken en vraag waar het sneller ging. (Rechts: je leest één kolom van boven naar onder.) Dat is ook vraag 1 in het werkdocument.</p>
+    <p>Eén zin over spaties: <em>"Je kan kolommen ook maken met spaties. Dat lijkt te werken, tot een naam langer wordt: dan schuift alles. Net als de Enters van vorige les."</em></p>
+  </template>
+</section>
+
+<!-- 5 -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 3 van 4 · demo</p>
+  <h2>Invullen en aanpassen</h2>
+  <div class="two">
+    <div class="panel">
+      <p style="font-size:24px"><strong>Typen in een tabel</strong></p>
+      <p style="font-size:24px">Klik in een cel en typ.</p>
+      <p style="font-size:24px">In elke cel maar <strong>één</strong> ding: een uur, een naam of een getal.</p>
+    </div>
+    <div class="panel">
+      <p style="font-size:24px"><strong>Rechtsklik in een cel</strong></p>
+      <ul>
+        <li>Rij boven invoegen · Rij onder invoegen</li>
+        <li>Kolom links invoegen · Kolom rechts invoegen</li>
+        <li>Rij verwijderen · Kolom verwijderen</li>
+      </ul>
+    </div>
+  </div>
+  <p class="reveal-item" style="margin-top:18px;color:#A0372A"><strong>Rij verwijderen wist de hele rij.</strong> Kijk eerst in welke rij je klikt. Mis? Ctrl + Z.</p>
+  <template class="note">
+    <p><strong>Ik doe, 1'30" — hardop denkend voordoen in je eigen kopie van het werkdocument.</strong></p>
+    <ol>
+      <li>Lees de eerste zin van het briefje hardop. Zeg: <em>"Wat gaat in welke kolom? Het uur: 7.30. De leverancier: Bakkerij Korstjes. Pallets: 2. Poort: 3. Het woord 'uur' typ ik niet: dat staat al bovenaan."</em> Klik telkens in de volgende cel en typ. Dit is <strong>rij 1</strong>: die staat al ingevuld bij de leerlingen.</li>
+      <li>Klik met de rechtermuisknop in een cel en toon het menu. Wijs <em>Rij onder invoegen</em> en <em>Rij verwijderen</em> aan. Zeg: <em>"Dit heb je straks nodig als het onthaal belt met wijzigingen."</em> Klik weg zonder iets te kiezen.</li>
+    </ol>
+    <p>Druk op → voor de waarschuwing.</p>
+  </template>
+</section>
+
+<!-- 6 -->
+<section class="slide compact">
+  <p class="kicker">Ik doe · dia 4 van 4 · demo</p>
+  <h2>Een tabel opmaken</h2>
+  <div class="two">
+    <div class="panel">
+      <p style="font-size:24px"><strong>De koprij</strong></p>
+      <ul>
+        <li>Sleep van de eerste tot de laatste cel.</li>
+        <li>Vet: <span class="mono">Ctrl + B</span></li>
+        <li>Kleur: <strong>Achtergrondkleur</strong> in de werkbalk</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <p style="font-size:24px"><strong>Straks zelf, op de lespagina:</strong></p>
+      <ul>
+        <li>Getallen in het midden: <span class="mono">Ctrl + Shift + E</span></li>
+        <li>Kolom breder: sleep de rasterlijn ↔</li>
+        <li>Zelf een tabel: <strong>Invoegen › Tabel</strong></li>
+      </ul>
+    </div>
+  </div>
+  <p class="reveal-item" style="margin-top:18px"><strong>Eerst selecteren, dan de knop.</strong> Dezelfde gouden regel als in les 03.</p>
+  <template class="note">
+    <p><strong>Ik doe, 1'30".</strong> Het tweede stuk van de demo: meerdere cellen selecteren. Dat loopt het vaakst mis.</p>
+    <ol>
+      <li>Sleep over de koprij, van <em>Uur</em> tot <em>Poort</em>. Zeg: <em>"Zie je? Alle vier de cellen zijn blauw. Pas nu kies ik de knop."</em></li>
+      <li>Ctrl + B, dan <em>Achtergrondkleur</em> in de werkbalk, een lichtblauwe kleur.</li>
+      <li>Toon wat er gebeurt als je maar in één cel klikt: alleen die cel wordt gekleurd. Ctrl + Z.</li>
+    </ol>
+    <p>Centreren, kolombreedte en <em>Invoegen › Tabel</em> doe je <strong>niet</strong> voor: die staan op de lespagina. Druk op → voor de gouden regel, dan meteen door naar dia 7.</p>
+  </template>
+</section>
+
+<!-- 7 -->
+<section class="slide compact">
+  <p class="kicker">Jullie doen · 34 minuten</p>
+  <h2>Zo werk je verder</h2>
+  <div class="two">
+    <div>
+      <ol class="steps2">
+        <li>Klaarzetten <span class="klok">2'</span></li>
+        <li>De tabel invullen <span class="klok">8'</span></li>
+        <li>Rijen en kolommen <span class="klok">6'</span></li>
+        <li>De tabel opmaken <span class="klok">7'</span></li>
+        <li>Zelf een tabel maken <span class="klok">10'</span></li>
+        <li>Controleren en inleveren <span class="klok">5'</span></li>
+      </ol>
+    </div>
+    <div class="panel navy">
+      <p style="font-size:25px"><strong>Vast?</strong></p>
+      <p>1. Theoriekaart &nbsp; 2. Hulp nodig?</p>
+      <p>3. Je buur &nbsp; 4. Ik</p>
+      <p style="margin-top:14px;font-size:22px">Vink af in de <strong>checklist</strong>.</p>
+    </div>
+  </div>
+  <p class="klok" style="margin-top:18px"><!-- PAS AAN na het publiceren: zet hier jouw eigen GitHub Pages-adres -->
+    <strong>De lespagina staat in Classroom</strong>, bij de opdracht <em>Tekstverwerking 4 — Alles op een rij</em>.
+    Adres: jonasdaltongent.github.io/Tabellen-NovaDepot/ &nbsp;·&nbsp; Je levert alleen je <strong>werkdocument</strong> in.</p>
+  <template class="note">
+    <p><strong>Jullie doen, 34'.</strong> Laat deze dia staan zolang ze werken.</p>
+    <p>Eerste rondgang: werkt iedereen in de eigen kopie, en staat er in elke cel maar één ding (geen hele zinnen in de tabel)? Dat blokkeert stap 3 en 4.</p>
+    <p>Tweede rondgang, rond stap 3: is er iemand die de verkeerde rij verwijderde? Ctrl + Z.</p>
+    <p>Daarna gerichte hulp. Wie stap 2 niet rond krijgt: verlengde instructie aan de instructietafel.</p>
+    <p><strong>Vergeet niet</strong> het adres op deze dia aan te passen als de repository anders heet.</p>
+  </template>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <p class="kicker">Afsluiten · 2 minuten</p>
+  <h2>Eén vraag voor je vertrekt</h2>
+  <div class="panel navy" style="margin-top:10px">
+    <p style="font-size:30px">Waarom maak je kolommen met een tabel, en niet met spaties?</p>
+  </div>
+  <p style="margin-top:24px">Tabellen kom je overal tegen: in een rooster, een prijslijst, een bestelbon. Ze komen terug in de eindopdracht tekstverwerking.</p>
+  <template class="note">
+    <p><strong>Afsluiting, 2'.</strong> Laat twee of drie leerlingen antwoorden. Verwacht: spaties schuiven zodra de tekst of het lettertype verandert; een tabel houdt elke kolom op zijn plaats.</p>
+    <p>Wie niet klaar is: toch inleveren, met in een privéreactie tot welke stap ze geraakt zijn. De rest is keuzewerktijd.</p>
+    <p>De zin over de eindopdracht is een voorstel (zie lesvoorbereiding §26). Plan je iets anders, pas de zin dan aan.</p>
+  </template>
+</section>
+
+</div></div>
+<div class="notes" id="notes"></div>
+<script src="js/slides.js"></script>
+</body>
+</html>

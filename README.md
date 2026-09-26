@@ -1,0 +1,264 @@
+# Handleiding voor de leraar — Les 05: Alles op een rij
+
+**Vak:** Toegepaste Informatica
+**Doelgroep:** de ORLO-klassen — 2de graad Organisatie en logistiek, arbeidsmarktgerichte finaliteit
+**Lesduur:** 1 × 50 minuten + 30 minuten keuzewerktijd (formatief)
+**Context:** NovaDepot, fictief logistiek bedrijf en groothandel (vervolg op les 02–04)
+**Toestel:** Windows 10-pc met AZERTY-klavier, Google Chrome en Google Workspace
+**Kernleerplandoelen:** `BK2_02.05` / `BK2_02.05.02` (tekstverwerking, minimale inhoud *tabellen*) en `BV2_04.02` (digitale inhouden creëren) — toepassen
+**Deadline:** vrijdag 2 oktober 2026, 20.00 uur
+
+De leerling zet de leveringen van een dag uit een briefje in een tabel, past de tabel aan
+(rij weg, rij erbij, kolom erbij), maakt ze op, en maakt daarna zelfstandig een deelnemerslijst
+voor de infosessie van de jobstudenten uit les 04. Hij levert alleen het werkdocument in.
+
+---
+
+## 1. Inhoud van het pakket
+
+```text
+W05 - Les 05 - ORLO - Tekstverwerking - tabellen/
+├── index.html                   # de lespagina: route · één stap · checklist
+├── presentatie.html             # 8 klassikale dia's voor de lesstart en "Ik doe"
+├── css/style.css, css/slides.css
+├── js/script.js, js/slides.js
+├── assets/
+│   ├── novadepot-logo.svg/.png, novadepot-icon.svg   # logo NovaDepot (eigen werk)
+│   ├── dalton-gent-logo.png
+│   ├── fonts/                   # Atkinson Hyperlegible + Montserrat (OFL, zelf gehost)
+│   └── screenshots/             # knop-uitlijnen.png (jouw schermafbeelding uit les 03) + LEESMIJ.md
+├── werkdocument/
+│   ├── TV4_Tabellen.docx        # het werkdocument dat de leerling INLEVERT
+│   └── maak_werkdocumenten.py   # maakt het werkdocument opnieuw (python-docx)
+├── lesvoorbereiding.md          # volgens §9.2 van de AI-lesplanner v2
+├── dalton-lesfiche.md           # lestijd + keuzewerktijd
+├── lesdoelen.json               # leerplandoelen voor je jaaroverzicht
+└── README.md                    # deze handleiding
+```
+
+Geen bronbestanden en dus geen zip-bestand: het briefje en het mailtje staan in het werkdocument.
+
+### 1b. Hoe de lespagina werkt
+
+Dezelfde opbouw als les 04 (AI-lesplanner v2): links de **route** (zes stappen in twee groepen:
+*Deel A: de leveringen* · *Deel B en inleveren*), midden **één stap** met vijf vaste blokken,
+rechts de **checklist** met 21 concrete taken. Op een half scherm staat alles onder elkaar en zie
+je alleen de taken van de huidige stap; in stap 6 staat de hele lijst open.
+
+- De **theoriekaart** heeft tien kaartjes, met een kleine voorbeeldtabel waarin de koprij, een rij,
+  een kolom en een cel elk een eigen kleur én een uitleg in woorden krijgen.
+- **Stap 5** toont de **tabelkaart** van NovaDepot (zoals de huisstijlkaart in les 03): de leerling
+  maakt de deelnemerslijst met alleen die kaart.
+- Geen toestelkeuze: alles gebeurt in de browser.
+
+`localStorage` bewaart alleen de vinkjes en de laatste stap (voorvoegsel `novadepot_tv4_v1_`).
+
+---
+
+## 2. Klaarzetten (± 15 minuten)
+
+### Stap 1 — Publiceren via GitHub Pages ⏳ *nog niet gebeurd*
+
+Alleen lokaal vastgelegd in git; ik publiceer op jouw vraag, na je controle. Voorstel:
+
+- **Repository:** `jonasdaltongent/Tabellen-NovaDepot`
+- **Lespagina:** `https://jonasdaltongent.github.io/Tabellen-NovaDepot/`
+- **Dia's:** `https://jonasdaltongent.github.io/Tabellen-NovaDepot/presentatie.html`
+
+Dat adres staat al op dia 7 en in `lesdoelen.json`. Andere naam? Zoek in `presentatie.html` op
+`PAS AAN`.
+
+### Stap 2 — Het werkdocument omzetten en nakijken
+
+1. Upload `werkdocument/TV4_Tabellen.docx` naar Drive en **zet het om naar een Google-document**
+   (zie les 04, README §2: de gedocumenteerde manier is de Drive-instelling **Uploads converteren
+   naar de indeling van een Editor van Google Documenten**,
+   [Drive-help 2424368](https://support.google.com/drive/answer/2424368?hl=nl)).
+2. **Kijk het omgezette document na:**
+   - [ ] de tabel in deel A heeft **vier even brede kolommen** en randen; *Koffiebranderij De
+     Bonenbaas* past niet op één regel (dat is de bedoeling: stap 4);
+   - [ ] de koprij *Uur · Leverancier · Pallets · Poort* is **niet** vet en niet gekleurd;
+   - [ ] rij 1 is ingevuld (*7.30 · Bakkerij Korstjes · 2 · 3*), rij 2 tot 6 zijn leeg;
+   - [ ] het briefje, de wijzigingen en het mailtje hebben een lichtgele achtergrond (mag ook
+     wegvallen; de tekst is wat telt);
+   - [ ] bovenaan elke pagina de koptekst, onderaan *Pagina 1*, *Pagina 2* …
+3. Verwijder daarna het `.docx`-bestand uit Drive.
+
+### Stap 3 — Eén opdracht in Google Classroom
+
+| | Opdracht: **Tekstverwerking 4 — Alles op een rij** |
+|---|---|
+| **Onderwerp** | Tekstverwerking – de basis |
+| **Bijlage 1** | de link naar de lespagina |
+| **Bijlage 2** | `TV4_Tabellen` (Google-document) — **Een kopie maken voor elke leerling** |
+| **Punten** | zonder cijfer (formatief) |
+| **Deadline** | vrijdag 2 oktober 2026, 20.00 uur |
+
+Instructietekst (kopieer):
+
+```text
+1. Open de lespagina (link). Zet ze links op je scherm.
+2. Open je werkdocument TV4_Tabellen. Zet het rechts.
+3. Volg de stappen op de lespagina. Je maakt twee tabellen: deel A en deel B.
+4. Klaar? Klik op Inleveren. Niet klaar? Lever toch in en schrijf onder Privéreacties tot welke stap je kwam.
+```
+
+Je e-mailadres is deze les niet nodig.
+
+### Afvinklijst vóór de les
+
+- [ ] De lespagina is gepubliceerd en het adres op dia 7 klopt.
+- [ ] Het werkdocument is een **Google-document** en ziet eruit zoals in stap 2 hierboven.
+- [ ] Een testleerling krijgt een eigen kopie met de eigen naam in de titel.
+- [ ] Met die testleerling: rechtsklik in een cel toont **Rij onder invoegen** en **Rij verwijderen**;
+  met de koprij geselecteerd staat **Achtergrondkleur** in de werkbalk (of achter ⋮).
+- [ ] `presentatie.html` opent op de beamer; `N` toont je notities.
+
+### 2b. Nagelezen klikpaden (26-09-2026)
+
+Uit de Nederlandse helppagina's, ruwe tekst. Waar jouw scherm anders zegt, geldt jouw scherm.
+
+| Handeling | Klikpad / naam | Bron |
+|---|---|---|
+| Tabel invoegen | **Invoegen** › **Tabel**, kies hoeveel rijen en kolommen (max. 20 × 20) | [Docs 1696711](https://support.google.com/docs/answer/1696711?hl=nl) |
+| Rij of kolom toevoegen | rechtsklik op een cel › **Kolom links invoegen** · **Kolom rechts invoegen** · **Rij boven invoegen** · **Rij onder invoegen** | idem |
+| Verwijderen | rechtsklik › **Kolom verwijderen** · **Rij verwijderen** · **Tabel verwijderen** | idem |
+| Kolombreedte | muisaanwijzer op de rasterlijn tot een dubbele pijl, dan slepen | idem |
+| Celkleur | cellen selecteren › in de werkbalk **Achtergrondkleur** | idem |
+| Tabelopties | **Opmaak** › **Tabel** › **Tabelopties**, of rechtsklik › **Tabelopties**; onder *Rij* een hoogte, **OK** | idem |
+| Koprij vastzetten | rechtsklik › **Kop vastzetten tot deze rij** (vastgezette rijen sorteren niet mee) | idem |
+| Sorteren | rechtsklik › **Tabel sorteren** › **Tabel sorteren in oplopende volgorde** | idem |
+| Vet · centreren | **Ctrl + B** · **Ctrl + Shift + E**; werkbalk **Uitlijnen** | [Sneltoetsen](https://support.google.com/docs/answer/179738?hl=nl) · [Docs 1663349](https://support.google.com/docs/answer/1663349?hl=nl) |
+| Inleveren | **Inleveren** · **Inleveren ongedaan maken** · **Privéreacties** › **Posten** | [Classroom 6020285](https://support.google.com/edu/classroom/answer/6020285?hl=nl) |
+| Uit les 04 | **Invoegen** › **Pagina-elementen** › **Koptekst** · **Ctrl + Enter** · **Bestand** › **Downloaden** | zie README van les 04, §2b |
+
+**Beschreven in plaats van benoemd** (niet in de helppagina's): hoe het raster van *Invoegen ›
+Tabel* eruitziet (*"beweeg over de vakjes: 3 naar rechts en 6 naar beneden"*), de namen van de
+kleuren bij *Achtergrondkleur* (*"een lichtblauwe kleur"*) en het veld voor de rijhoogte in
+*Tabelopties*.
+
+---
+
+## 3. Het verloop van de les
+
+| Fase | Tijd | Wat |
+|---|---|---|
+| Lesstart | 3' | Dia 1–2: retrieval van les 04 (pagina-einde, koptekst) |
+| **Ik doe** | **5'** | Dia 3–6: lesdoel, van briefje naar tabel, en twee dingen voordoen: rij 1 invullen + het rechtsklikmenu, en de koprij selecteren en opmaken |
+| Jullie doen | 34' | Dia 7 blijft staan; stap 1 tot 5 |
+| Controle en indiening | 6' | Stap 6: zelftest, checklist, vraag 4, Inleveren |
+| Afsluiting | 2' | Dia 8: waarom een tabel en geen spaties? |
+
+**Eerste rondgang, kijk naar twee dingen:**
+
+1. Werkt iedereen in de **eigen kopie** van het werkdocument?
+2. Staat er in elke cel maar **één ding**? Wie hele zinnen in de tabel typt, loopt vast in stap 3
+   en 4.
+
+**Tweede rondgang, rond stap 3:** is de juiste rij verwijderd (Frisdranken Bubbel, 9.00 uur), en
+staat 11.15 uur tussen 10.30 en 13.00? Een verkeerde rij verwijderd: *Ctrl + Z*.
+
+---
+
+## 4. Verbetersleutel
+
+### Deel A na stap 3 en 4
+
+| Uur | Leverancier | Pallets | Poort | Afgetekend |
+|---|---|---|---|---|
+| 7.30 | Bakkerij Korstjes | 2 | 3 | |
+| 8.15 | Papierhandel Vellekens | 4 | 4 | |
+| 10.30 | Koffiebranderij De Bonenbaas | 1 | 4 | |
+| 11.15 | Tuincentrum Groenvinger | 2 | 3 | |
+| 13.00 | Speelgoed Tolletje | 3 | 3 | |
+| 14.45 | Schoonmaak Glanzmann | 2 | 4 | |
+
+- Zes leveringen, op volgorde van het uur; **geen** Frisdranken Bubbel (9.00 uur); geen lege rijen.
+- Koprij vet en lichtblauw (over alle vijf de cellen); *Pallets* en *Poort* gecentreerd; elke naam
+  op één regel; *Afgetekend* leeg.
+- Een tijd als `8u15` of `08.15` is goed. Woorden als *om*, *uur* of *pallets* in de cellen: niet.
+
+### Deel B
+
+- Een titel boven de tabel, vet: *Deelnemerslijst infosessie jobstudenten*.
+- Een tabel van 3 kolommen × 6 rijen: *Naam · Afdeling · Handtekening*, en de vijf jobstudenten
+  (Lina Haddad – magazijn · Emre Yilmaz – magazijn · Noor Verbeke – onthaal · Kobe De Smet –
+  verzending · Ayla Janssens – onthaal). De volgorde uit het mailtje of alfabetisch: allebei goed.
+- Opgemaakt zoals de tabelkaart: koprij vet en lichtblauw, tekst links, geen lege rijen, elke naam
+  op één regel. De kolom *Handtekening* blijft leeg.
+
+### Vragen
+
+| Vraag | Waar het om gaat |
+|---|---|
+| 1 | **7 pallets** (4 + 1 + 2). Sneller in de tabel: je kijkt alleen naar de kolommen *Pallets* en *Poort*, in plaats van zes zinnen te lezen. |
+| 2 | Zodat je meteen ziet wat er in elke kolom staat; de koprij valt op en is geen gegeven. |
+| 3 | Spaties en tabs schuiven op zodra een naam langer wordt of het lettertype verandert; een tabel houdt elke kolom op zijn plaats. |
+| 4 | Vrij. |
+
+**Vraag 1, het getal.** Naar poort 4 gaan Papierhandel Vellekens (4), Koffiebranderij De Bonenbaas
+(1) en Schoonmaak Glanzmann (2): **7 pallets**. Vóór en na stap 3 is dat hetzelfde, want de
+wijzigingen gaan alleen over poort 3. Het gaat vooral om *waar* je het sneller vindt. Tellen ze
+leveringen in plaats van pallets (3), vraag dan door: *"Hoeveel pallets, niet hoeveel
+vrachtwagens?"*
+
+### Essentiële fouten — geef hier altijd feedback op
+
+- Hele zinnen of meerdere gegevens in één cel.
+- De verkeerde levering verwijderd, of de levering van 11.15 uur achteraan gezet.
+- Kolommen gemaakt met spaties of tabs in plaats van een tabel (deel B).
+- Lege rijen laten staan.
+- Deel B zonder tabel, of de titel in de tabel in plaats van erboven.
+
+**Feedback:** één top en één tip als privéreactie in Classroom. Verbeteren en opnieuw inleveren
+mag (*Inleveren ongedaan maken*).
+
+---
+
+## 5. Schermafbeeldingen (optioneel)
+
+Drie plaatsen; `knop-uitlijnen.png` staat er al (jouw schermafbeelding uit les 03). Open
+`index.html?leraar` om te zien waar de andere twee komen; de lijst staat in
+`assets/screenshots/LEESMIJ.md`. Zolang ze ontbreken, zie je twee 404-meldingen in de console.
+
+---
+
+## 6. Het werkdocument opnieuw maken
+
+```bash
+python3 "werkdocument/maak_werkdocumenten.py"
+```
+
+Vereist `python-docx`. Het briefje, de wijzigingen en de jobstudenten staan bovenaan het script
+(`LEVERINGEN`, `EXTRA_LEVERING`, `JOBSTUDENTEN`). Pas je ze aan, pas dan ook §4 hierboven en rij 1
+op de lespagina (stap 2) aan.
+
+---
+
+## 7. Leerplandoelen in je jaaroverzicht
+
+```bash
+python3 "../../_tools/update_leerdoelen.py" lesdoelen.json
+```
+
+Nog **niet** uitgevoerd: de doelen komen pas in `Leerplandoelen 2026-2027.xlsx` als jij de inhoud
+goedkeurt of bij het publiceren. Alle acht codes staan op het blad **ORLO** (ook `BK2_02.10.01` en
+`BK2_02.14.02`). De datum in `lesdoelen.json` is een plaatshouder (maandag 28 september 2026).
+
+---
+
+## 8. Wat nog moet blijken in de klas
+
+1. **De kolombreedtes na het omzetten.** Het werkdocument zet de vier kolommen van deel A vast op
+   even breed. Ik kon niet nagaan of Google Documenten die breedte bij het omzetten overneemt (de
+   voorvertoning op de Mac negeert ze). Kijk het na volgens §2. Past alles toch al op één regel,
+   dan valt handeling 4 van stap 4 gewoon weg.
+2. **Achtergrondkleur in de werkbalk.** Volgens de helppagina staat die knop in de werkbalk als er
+   cellen geselecteerd zijn. In een smal venster zit hij waarschijnlijk achter ⋮.
+3. **Het raster van *Invoegen › Tabel*.** Kiezen de leerlingen vlot 3 × 6? Zo niet, laat ze een
+   kleinere tabel maken en rijen bijvoegen met *Rij onder invoegen*.
+4. **Haalbaarheid.** Twee tabellen in 50 + 30 minuten. Te krap? Gebruik de minimumroute uit
+   `lesvoorbereiding.md` §20.
+5. **Deadline.** Les 04 en 05 vallen in dezelfde week, met dezelfde deadline (vrijdag 2 oktober,
+   20.00 uur). Als les 05 op vrijdag valt, is dat krap voor de keuzewerktijd.
+6. **Klasnaam.** `lesdoelen.json` gaat uit van `3ORLO`. Pas `klasnaam` aan als dat niet klopt.
