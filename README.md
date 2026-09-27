@@ -57,16 +57,18 @@ je alleen de taken van de huidige stap; in stap 6 staat de hele lijst open.
 
 ## 2. Klaarzetten (± 15 minuten)
 
-### Stap 1 — Publiceren via GitHub Pages ⏳ *nog niet gebeurd*
+### Stap 1 — Publiceren via GitHub Pages ✅ *gebeurd op 27-09-2026*
 
-Alleen lokaal vastgelegd in git; ik publiceer op jouw vraag, na je controle. Voorstel:
+Op jouw vraag gepubliceerd, vóór je inhoudelijke controle, zodat je het op je gsm kan nakijken.
+Pages staat op branch `main`, map `/ (root)`:
 
-- **Repository:** `jonasdaltongent/Tabellen-NovaDepot`
-- **Lespagina:** `https://jonasdaltongent.github.io/Tabellen-NovaDepot/`
-- **Dia's:** `https://jonasdaltongent.github.io/Tabellen-NovaDepot/presentatie.html`
+- **Repository:** <https://github.com/jonasdaltongent/Tabellen-NovaDepot>
+- **Lespagina voor de leerlingen:** <https://jonasdaltongent.github.io/Tabellen-NovaDepot/>
+- **Dia's voor het bord:** <https://jonasdaltongent.github.io/Tabellen-NovaDepot/presentatie.html>
 
-Dat adres staat al op dia 7 en in `lesdoelen.json`. Andere naam? Zoek in `presentatie.html` op
-`PAS AAN`.
+Dat adres staat al op dia 7 en in `lesdoelen.json` (veld `bron`). Deel met de leerlingen altijd
+het **Pages-adres**, niet de repositorylink. Wil je na je controle iets veranderen, zeg het: ik pas
+het aan en push opnieuw. Een wijziging staat 1 à 2 minuten na de push online.
 
 ### Stap 2 — Het werkdocument omzetten en nakijken
 
@@ -107,7 +109,7 @@ Je e-mailadres is deze les niet nodig.
 
 ### Afvinklijst vóór de les
 
-- [ ] De lespagina is gepubliceerd en het adres op dia 7 klopt.
+- [x] De lespagina is gepubliceerd en het adres op dia 7 klopt. (Getest op 27-09-2026.)
 - [ ] Het werkdocument is een **Google-document** en ziet eruit zoals in stap 2 hierboven.
 - [ ] Een testleerling krijgt een eigen kopie met de eigen naam in de titel.
 - [ ] Met die testleerling: rechtsklik in een cel toont **Rij onder invoegen** en **Rij verwijderen**;
@@ -237,15 +239,23 @@ op de lespagina (stap 2) aan.
 
 ## 7. Leerplandoelen in je jaaroverzicht
 
+De repository heeft een `pre-push` hook (in `.git/hooks/`, zoals bij les 02–03): bij elke push
+roept hij `_tools/update_leerdoelen.py` aan met `lesdoelen.json`. Bij de eerste push op 27-09-2026
+zijn de 8 doelen van deze les op het blad *Registratie* van `Leerplandoelen 2026-2027.xlsx`
+gezet, en ze staan allemaal op het blad **ORLO**, dus ze worden geteld. Een tweede push voegt niets
+dubbel toe.
+
+Met de hand, als dat ooit nodig is:
+
 ```bash
 python3 "../../_tools/update_leerdoelen.py" lesdoelen.json
 ```
 
-Nog **niet** uitgevoerd: de doelen komen pas in `Leerplandoelen 2026-2027.xlsx` als jij de inhoud
-goedkeurt of bij het publiceren. Alle acht codes staan op het blad **ORLO** (ook `BK2_02.10.01` en
-`BK2_02.14.02`). De datum in `lesdoelen.json` is een plaatshouder (maandag 28 september 2026).
-
----
+> [!NOTE]
+> De datum in `lesdoelen.json` is een plaatshouder (maandag 28 september 2026). Het script schrijft
+> een regel maar één keer: pas je de datum later aan, verbeter hem dan ook op het blad
+> *Registratie*. Een hook wordt niet mee gekloond: haal je de repository opnieuw binnen, dan moet
+> hij opnieuw geïnstalleerd worden.
 
 ## 8. Wat nog moet blijken in de klas
 

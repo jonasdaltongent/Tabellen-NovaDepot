@@ -148,14 +148,15 @@ selecteren met slepen, *eerst selecteren, dan de knop*, vet (Ctrl + B), centrere
 - Windows 10-pc per leerling met AZERTY-klavier, Google Chrome en het schoolaccount.
 - Google Classroom en Google Documenten.
 - Beamer met `presentatie.html` (8 dia's).
-- De lespagina (GitHub Pages, na publicatie) en het werkdocument **TV4_Tabellen**.
+- De lespagina (`https://jonasdaltongent.github.io/Tabellen-NovaDepot/`) en het werkdocument **TV4_Tabellen**.
 - Geen bronbestanden en dus geen zip-bestand: het briefje en het mailtje staan in het werkdocument.
 
 ## 12. Voorbereiding door de leraar
 
 Zie `README.md` §2. In het kort:
 
-1. Laat de lespagina publiceren (nog niet gebeurd; alleen op jouw vraag).
+1. De lespagina staat online (gepubliceerd op 27-09-2026):
+   `https://jonasdaltongent.github.io/Tabellen-NovaDepot/`.
 2. Upload `werkdocument/TV4_Tabellen.docx` naar Drive, **zet het om naar een Google-document** en
    kijk na dat de tabel van deel A vier even brede kolommen heeft, met een koprij zonder opmaak en
    rij 1 ingevuld.
