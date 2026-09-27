@@ -180,8 +180,9 @@ Zie `README.md` §2. In het kort:
 
 ## 13. Opbouw in Google Classroom
 
-Onderwerp **Tekstverwerking – de basis**. Eén opdracht, *Tekstverwerking 4 — Alles op een rij*,
-zonder cijfer (formatief), deadline **vrijdag 2 oktober 2026, 20.00 uur**:
+Onderwerp **Tekstverwerker** (zoals les 02–03). Eén opdracht in elke klas (3ORLO, 4ORLOa, 4ORLOb),
+*Tekstverwerking 4 — Alles op een rij*, 20 punten (zoals les 02–03), deadline **vrijdag 2 oktober
+2026, 20.00 uur**. Gepost op 27-09-2026 met `_tools/zet_opdracht_klaar.py` (`classroom.json`):
 
 | Bijlage | Instelling | Waarom |
 |---|---|---|

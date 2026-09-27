@@ -107,16 +107,25 @@ Daarna, voor deze les:
 
 ### Stap 3 — Eén opdracht in Google Classroom
 
+> [!NOTE]
+> **Gepost op 27-09-2026** in 3ORLO 2027, 4ORLOa 2027 en 4ORLOb 2027, met
+> `_tools/zet_opdracht_klaar.py` en `classroom.json` (zie `_tools/CLASSROOM-KOPPELING.md`). Het script
+> zette het werkdocument om en maakte de concepten; daarna zijn ze op jouw vraag gepubliceerd. Het
+> werkdocument staat in *Mijn Drive* › `Classroom-bijlagen` › de naam van deze lesmap. De controle van
+> stap 2 gebeurde via een export van het omgezette document: de tabel van deel A heeft nog vier even
+> brede kolommen, een koprij zonder opmaak en rij 1 ingevuld. Wat volgt, is de manier met de hand,
+> voor als je de opdracht ooit opnieuw moet maken.
+
 Voeg het werkdocument toe met **Bijvoegen** › **Drive** en kies **Een kopie maken voor elke
 leerling**: elke leerling krijgt een eigen kopie met de eigen naam in de titel. Voeg de lespagina
 toe met **Link**.
 
 | | Opdracht: **Tekstverwerking 4 — Alles op een rij** |
 |---|---|
-| **Onderwerp** | Tekstverwerking – de basis |
+| **Onderwerp** | Tekstverwerker |
 | **Bijlage 1** | de link naar de lespagina |
 | **Bijlage 2** | `TV4_Tabellen` (Google-document) — **Een kopie maken voor elke leerling** |
-| **Punten** | zonder cijfer (formatief) |
+| **Punten** | 20 (zoals les 02–03) |
 | **Deadline** | vrijdag 2 oktober 2026, 20.00 uur |
 
 > [!NOTE]
@@ -127,7 +136,7 @@ Instructietekst (kopieer):
 ```text
 1. Open de lespagina (link) en je werkdocument TV4_Tabellen.
 2. Volg de stappen op de lespagina. Je maakt twee tabellen: deel A en deel B.
-3. Klaar? Klik op Inleveren.
+3. Klik op Inleveren, ten laatste vrijdag 2 oktober 2026 om 20.00 uur.
 ```
 
 Wie niet klaar is, levert toch in: dat zeg je mondeling op het einde van de les (notities bij dia 8).
@@ -138,8 +147,9 @@ Je e-mailadres is deze les niet nodig.
 ### Afvinklijst vóór de les
 
 - [x] De lespagina is gepubliceerd en het adres op dia 7 klopt. (Getest op 27-09-2026.)
-- [ ] Het werkdocument is een **Google-document** (geen `.docx` achter de naam), toegevoegd met
-  **Drive**, en ziet eruit zoals in stap 2 hierboven.
+- [x] De opdracht staat in 3ORLO, 4ORLOa en 4ORLOb. (Gepost op 27-09-2026.)
+- [x] Het werkdocument is een **Google-document** met *Een kopie maken voor elke leerling*, en ziet
+  eruit zoals in stap 2 hierboven. (Nagekeken op 27-09-2026 via een export.)
 - [ ] Een testleerling krijgt een eigen kopie met de eigen naam in de titel.
 - [ ] Met die testleerling: rechtsklik in een cel toont **Rij onder invoegen** en **Rij verwijderen**;
   met de koprij geselecteerd staat **Achtergrondkleur** in de werkbalk (of achter ⋮).
@@ -289,10 +299,10 @@ python3 "../../_tools/update_leerdoelen.py" lesdoelen.json
 
 ## 8. Wat nog moet blijken in de klas
 
-1. **De kolombreedtes na het omzetten.** Het werkdocument zet de vier kolommen van deel A vast op
-   even breed. Ik kon niet nagaan of Google Documenten die breedte bij het omzetten overneemt (de
-   voorvertoning op de Mac negeert ze). Kijk het na volgens §2. Past alles toch al op één regel,
-   dan valt handeling 4 van stap 4 gewoon weg.
+1. **De kolombreedtes na het omzetten.** Nagekeken op 27-09-2026 via een export van het omgezette
+   document: de vier kolommen van deel A zijn nog elk 4,25 cm breed. Of *Koffiebranderij De
+   Bonenbaas* in Documenten echt op twee regels valt, zie je pas op het scherm. Past alles toch al
+   op één regel, dan valt handeling 4 van stap 4 gewoon weg.
 2. **Achtergrondkleur in de werkbalk.** Volgens de helppagina staat die knop in de werkbalk als er
    cellen geselecteerd zijn. In een smal venster zit hij waarschijnlijk achter ⋮.
 3. **Het raster van *Invoegen › Tabel*.** Kiezen de leerlingen vlot 3 × 6? Zo niet, laat ze een
