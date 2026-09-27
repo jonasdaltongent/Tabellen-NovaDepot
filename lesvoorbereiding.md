@@ -1,7 +1,7 @@
 ---
 title: "Lesvoorbereiding — Les 05: Alles op een rij (Tekstverwerking 4: tabellen)"
 vak: "Toegepaste Informatica"
-studierichting: "Organisatie en logistiek (arbeidsmarktgerichte finaliteit), 2de graad — de ORLO-klassen"
+studierichting: "Organisatie en logistiek (arbeidsmarktgerichte finaliteit), 2de graad — 3ORLO, 4ORLOa en 4ORLOb"
 lesduur: "1 × 50 minuten: 10 minuten instructie + 40 minuten keuzewerktijd"
 week: "W05 — 2026-2027"
 lokaal: "18 — computers met Windows 11, Google Workspace in Chrome"
@@ -40,7 +40,7 @@ overgenomen uit `Leerplannen 2de graad TOINFO.md` en daar automatisch mee vergel
 
 ## 2. Doelgroep en beginsituatie
 
-De ORLO-klassen: 2de graad Organisatie en logistiek, arbeidsmarktgerichte finaliteit.
+3ORLO, 4ORLOa en 4ORLOb: 2de graad Organisatie en logistiek, arbeidsmarktgerichte finaliteit.
 
 Les 02, 03 en 04 zijn de voorgaande lessen van deze reeks (tekst invoeren, tekst opmaken,
 documentopmaak en pdf). De leerlingen kennen de typregels, selecteren en de gouden regel *eerst

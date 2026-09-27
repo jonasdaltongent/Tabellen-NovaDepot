@@ -1,7 +1,7 @@
 # Handleiding voor de leraar — Les 05: Alles op een rij
 
 **Vak:** Toegepaste Informatica
-**Doelgroep:** de ORLO-klassen — 2de graad Organisatie en logistiek, arbeidsmarktgerichte finaliteit
+**Doelgroep:** 3ORLO, 4ORLOa en 4ORLOb — 2de graad Organisatie en logistiek, arbeidsmarktgerichte finaliteit
 **Lesduur:** 1 × 50 minuten: 10 minuten instructie + 40 minuten keuzewerktijd (formatief)
 **Context:** NovaDepot, fictief logistiek bedrijf en groothandel (vervolg op les 02–04)
 **Lokaal:** 18 — computers met Windows 11, Google Workspace in Chrome
@@ -301,4 +301,3 @@ python3 "../../_tools/update_leerdoelen.py" lesdoelen.json
    uit `lesvoorbereiding.md` §20.
 5. **Deadline.** Les 04 en 05 vallen in dezelfde week, met dezelfde deadline (vrijdag 2 oktober,
    20.00 uur). Wie les 05 laat in de week krijgt, heeft na de les weinig tijd om iets af te werken.
-6. **Klasnaam.** `lesdoelen.json` gaat uit van `3ORLO`. Pas `klasnaam` aan als dat niet klopt.
