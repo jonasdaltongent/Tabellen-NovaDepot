@@ -14,8 +14,7 @@ kader op elke plaats, met de bestandsnaam erbij.
 
 ## Waar op letten
 
-- Maak ze op een Windows-pc van de school, in het Nederlands, met Google Chrome.
-- Maak ze op een **half scherm**: zo zien ze er hetzelfde uit als bij de leerlingen.
+- Maak ze op een computer in lokaal 18 (Windows 11), in het Nederlands, met Google Chrome.
 - Knip strak rond het menu. Hoe minder leeg scherm, hoe leesbaarder.
 - **Geen echte namen of e-mailadressen in beeld.** Gebruik een testaccount.
 - Bewaar als `.png`, met precies de naam uit de tabel hierboven, en publiceer opnieuw.

@@ -273,10 +273,10 @@ def werkdocument():
 
     kop(doc, "Zo werk je", 12, voor=10)
     for s in [
-        "1.  Links op je scherm staat de lespagina. Daar lees je wat je moet doen.",
+        "1.  Op de lespagina lees je wat je moet doen, stap voor stap.",
         "2.  In dit werkdocument maak je twee tabellen: deel A en deel B.",
         "3.  Onderaan beantwoord je vier vragen.",
-        "4.  Alleen DIT document lever je in via Google Classroom.",
+        "4.  Alleen DIT document lever je in.",
     ]:
         tekst(doc, s, na=1)
 
@@ -356,7 +356,7 @@ def werkdocument():
 
     # ---- extra ----
     kop(doc, "Extra — niet verplicht")
-    tekst(doc, "Alleen als je al ingeleverd hebt. Klik in Classroom op Inleveren ongedaan maken. "
+    tekst(doc, "Alleen als je al ingeleverd hebt. Klik in de opdracht op Inleveren ongedaan maken. "
                "Lever daarna opnieuw in.", klein=True)
     tekst(doc, "a) Zet je deelnemerslijst op alfabetische volgorde. Kijk op de lespagina bij Extra.", vet=True, na=2)
     tekst(doc, "b) Geef de jobstudenten meer plaats om te tekenen: maak hun rijen hoger.", vet=True, na=2)

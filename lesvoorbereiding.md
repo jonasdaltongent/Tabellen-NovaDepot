@@ -2,26 +2,35 @@
 title: "Lesvoorbereiding — Les 05: Alles op een rij (Tekstverwerking 4: tabellen)"
 vak: "Toegepaste Informatica"
 studierichting: "Organisatie en logistiek (arbeidsmarktgerichte finaliteit), 2de graad — de ORLO-klassen"
-lesduur: "1 × 50 minuten + 30 minuten keuzewerktijd"
+lesduur: "1 × 50 minuten: 10 minuten instructie + 40 minuten keuzewerktijd"
 week: "W05 — 2026-2027"
-toestel: "Windows 10-pc met AZERTY-klavier, Google Chrome en Google Workspace"
+lokaal: "18 — computers met Windows 11, Google Workspace in Chrome"
 leerplan: "Leerplannen 2de graad TOINFO.md (GO! 2A/ORGANIS en 2024/2A/BAS, versie 31-01-2025)"
-opgesteld_volgens: "AI-lesplanner versie 2 (23-09-2026)"
+opgesteld_volgens: "AI-lesplanner versie 2.1 (27-09-2026)"
 ---
 
 # Lesvoorbereiding — Les 05: Alles op een rij
 
-Opgesteld volgens §9.2 van de AI-lesplanner (versie 2). De leerplandoelen zijn **letterlijk**
+Opgesteld volgens §9.2 van de AI-lesplanner (versie 2.1). De leerplandoelen zijn **letterlijk**
 overgenomen uit `Leerplannen 2de graad TOINFO.md` en daar automatisch mee vergeleken.
 
 > [!NOTE]
 > **Afwijking van de vierfasige opbouw** (*Ik doe → Wij doen → Jullie doen → Jij doet*) uit het
 > leerplan en uit versie 1 van de AI-lesplanner, op vraag van de leraar. De les volgt
-> **Ik doe → Jullie doen**: een korte instructie van **5 minuten** met demonstratie, daarna werken
-> de leerlingen zelfstandig met de lespagina. De "Wij doen"-stap zit in de demo: de leraar vult
+> **Ik doe → Jullie doen**: een instructie van **10 minuten** (lesstart, een demonstratie van
+> **5 minuten**, zo werk je verder), daarna werken de leerlingen **40 minuten** zelfstandig met de
+> lespagina: de keuzewerktijd. De "Wij doen"-stap zit in de demo: de leraar vult
 > **rij 1** van de tabel in (die staat al ingevuld in het werkdocument) en toont het
 > rechtsklikmenu en het selecteren van de koprij. Deel B (zelf een tabel maken, alleen met de
 > tabelkaart) is het zelfstandige "Jij doet".
+
+> [!NOTE]
+> **Aangepast aan versie 2.1 van de lesplanner (27-09-2026).** Alle klassen werken vanaf 28-09-2026
+> in **lokaal 18**, een computerlokaal met **Windows 11**: de lespagina en het werkdocument geven
+> alleen de werkwijze voor Windows. Hoe de leerlingen hun vensters schikken, kiezen ze zelf; de
+> leraar toont dat in de klas. De leerlingen starten elke les in Classroom, dus de lespagina zegt
+> niet meer dat ze de opdracht moeten openen. Een les is instructie + keuzewerktijd, samen
+> 50 minuten.
 
 ---
 
@@ -48,7 +57,8 @@ werktempo en zelfstandigheid.
 
 ## 3. Tijdsduur
 
-1 × 50 minuten lestijd + 30 minuten keuzewerktijd (Dalton), zie `dalton-lesfiche.md`.
+1 × 50 minuten: **10 minuten instructie** en **40 minuten keuzewerktijd** (keuzewerktijd = 50 − instructie).
+De verdeling over de taken staat in `dalton-lesfiche.html`.
 
 ## 4. Context
 
@@ -139,13 +149,13 @@ De eindtaak ligt op het officiële niveau **toepassen**.
 
 ## 10. Benodigde voorkennis
 
-Uit les 02–04: een Classroom-opdracht openen, twee vensters naast elkaar, klikken en typen,
+Uit les 02–04: een Classroom-opdracht openen, klikken en typen,
 selecteren met slepen, *eerst selecteren, dan de knop*, vet (Ctrl + B), centreren
 (Ctrl + Shift + E). De theoriekaart herhaalt les 04 op het kaartje *Uit les 04*.
 
 ## 11. Benodigd materiaal en software
 
-- Windows 10-pc per leerling met AZERTY-klavier, Google Chrome en het schoolaccount.
+- Een computer in lokaal 18 (Windows 11) met het schoolaccount en Google Chrome.
 - Google Classroom en Google Documenten.
 - Beamer met `presentatie.html` (8 dia's).
 - De lespagina (`https://jonasdaltongent.github.io/Tabellen-NovaDepot/`) en het werkdocument **TV4_Tabellen**.
@@ -157,11 +167,14 @@ Zie `README.md` §2. In het kort:
 
 1. De lespagina staat online (gepubliceerd op 27-09-2026):
    `https://jonasdaltongent.github.io/Tabellen-NovaDepot/`.
-2. Upload `werkdocument/TV4_Tabellen.docx` naar Drive, **zet het om naar een Google-document** en
-   kijk na dat de tabel van deel A vier even brede kolommen heeft, met een koprij zonder opmaak en
-   rij 1 ingevuld.
-3. Maak in Classroom **één** opdracht met twee bijlagen (lespagina + werkdocument met *Een kopie
-   maken voor elke leerling*). Test met een leerlingaccount of het rechtsklikmenu in een tabel
+2. Zet **één keer** in Drive de instelling *Uploads converteren naar de indeling van een Editor
+   van Google Documenten* aan (al gebeurd voor les 04? dan niet opnieuw). Upload
+   `werkdocument/TV4_Tabellen.docx` **in Drive** (**Nieuw** › **Bestanden uploaden**): dan wordt
+   het een Google-document. Kijk na dat de tabel van deel A vier even brede kolommen heeft, met een
+   koprij zonder opmaak en rij 1 ingevuld. Details: `README.md` §2.
+3. Maak in Classroom **één** opdracht met twee bijlagen (lespagina met **Link**, werkdocument met
+   **Drive** en *Een kopie maken voor elke leerling*; de Classroom-upload zet een `.docx` niet om).
+   Test met een leerlingaccount of het rechtsklikmenu in een tabel
    *Rij onder invoegen* en *Rij verwijderen* toont, en of *Achtergrondkleur* in de werkbalk staat
    als er cellen geselecteerd zijn.
 
@@ -173,7 +186,7 @@ zonder cijfer (formatief), deadline **vrijdag 2 oktober 2026, 20.00 uur**:
 | Bijlage | Instelling | Waarom |
 |---|---|---|
 | Link naar de lespagina | link | de instructies |
-| `TV4_Tabellen` (Google-document) | **Een kopie maken voor elke leerling** | het enige in te leveren bestand; kan alleen vóór het posten gekozen worden |
+| `TV4_Tabellen` (Google-document) | met **Drive**; **Een kopie maken voor elke leerling** | het enige in te leveren bestand; de kopie kan alleen vóór het posten gekozen worden |
 
 ## 14. Het individuele werkdocument
 
@@ -200,11 +213,10 @@ Verwachte resultaten en antwoorden: `README.md` §4.
 
 | Fase | Tijd | Inhoud |
 |---|---|---|
-| **1. Lesstart** | 3' | Dia 1–2. Retrieval van les 04 met vingers: *pagina-einde of Enters?* en *waar zet je tekst die op elke pagina staat?* Doorvraag: waarom geen Enters? |
-| **2. Ik doe** | **5'** | Dia 3–6. Lesdoel (30"), eindproduct: van briefje naar tabel, met de vraag *hoeveel pallets naar poort 4?* (1'). **Demo, hardop denkend** in de eigen kopie: (a) rij 1 invullen uit de eerste zin van het briefje, één gegeven per cel, en het rechtsklikmenu tonen (1'30"); (b) de koprij selecteren door te slepen, vet, achtergrondkleur, en tonen wat er misloopt als je maar in één cel klikt (1'30"). |
-| **3. Jullie doen** | 34' | Dia 7 blijft staan. Stap 1 tot 5. Eerste rondgang: werkt iedereen in de eigen kopie, en staat er in elke cel maar één ding? Tweede rondgang rond stap 3: de verkeerde rij verwijderd? Daarna gerichte feedback en verlengde instructie aan de instructietafel. |
-| **4. Controle en indiening** | 6' | Stap 6: zelftest van 3 vragen, checklist, vraag 4, *Inleveren*. |
-| **5. Afsluiting** | 2' | Dia 8: *waarom een tabel en geen spaties?* |
+| **Instructie** — lesstart | 3' | Dia 1–2. Retrieval van les 04 met vingers: *pagina-einde of Enters?* en *waar zet je tekst die op elke pagina staat?* Doorvraag: waarom geen Enters? |
+| **Instructie** — Ik doe | **5'** | Dia 3–6. Lesdoel (30"), eindproduct: van briefje naar tabel, met de vraag *hoeveel pallets naar poort 4?* (1'). **Demo, hardop denkend** in de eigen kopie: (a) rij 1 invullen uit de eerste zin van het briefje, één gegeven per cel, en het rechtsklikmenu tonen (1'30"); (b) de koprij selecteren door te slepen, vet, achtergrondkleur, en tonen wat er misloopt als je maar in één cel klikt (1'30"). |
+| **Instructie** — zo werk je verder | 2' | Dia 7: waar alles staat (de opdracht), de stappen, de hulpvolgorde. |
+| **Keuzewerktijd** | **40'** | Dia 7 blijft staan. Stap 1 tot 6, inleveren inbegrepen (stap 6: zelftest van 3 vragen, checklist, vraag 4, *Inleveren*). Eerste rondgang: werkt iedereen in de eigen kopie, en staat er in elke cel maar één ding? Tweede rondgang rond stap 3: de verkeerde rij verwijderd? Daarna gerichte feedback en verlengde instructie aan de instructietafel. In de laatste minuut: dia 8 (*waarom een tabel en geen spaties?*) en mondeling: wie niet klaar is, levert toch in. |
 
 Wat **niet** wordt voorgedaan: centreren, de kolombreedte slepen en *Invoegen › Tabel*. Die staan
 op de lespagina; *Invoegen › Tabel* is precies wat de leerling in deel B zelfstandig toepast.
@@ -216,8 +228,7 @@ vijf vaste blokken per stap.
 
 *Deel A: de leveringen*
 
-1. **Klaarzetten** — opdracht en werkdocument openen, naam in de kopregel (die zelf een tabel is).
-   (2')
+1. **Klaarzetten** — werkdocument openen, naam in de kopregel (die zelf een tabel is). (2')
 2. **De tabel invullen** — rij 2 tot 6 uit het briefje, één gegeven per cel; vraag 1. (8')
 3. **Rijen en kolommen** — Frisdranken Bubbel verwijderen, 11.15 uur invoegen onder 10.30 uur,
    kolom *Afgetekend* rechts. (6')
@@ -227,10 +238,13 @@ vijf vaste blokken per stap.
 *Deel B en inleveren*
 
 5. **Zelf een tabel maken** — titel, *Invoegen › Tabel* (3 × 6), deelnemerslijst invullen en
-   opmaken met alleen de tabelkaart; vraag 3. (10')
+   opmaken met alleen de tabelkaart; vraag 3. (12')
 6. **Controleren en inleveren** — zelftest, checklist, vraag 4, *Inleveren*. (5')
 7. **Extra (optioneel)** — alfabetisch sorteren (koprij vastzetten + *Tabel sorteren*) en hogere
    rijen om te tekenen (*Tabelopties*).
+
+Stap 1 tot 6 samen: **40 minuten**, de keuzewerktijd, inleveren inbegrepen. De extra stap krijgt geen
+minuten ("als je tijd over hebt"). Dezelfde minuten staan op dia 7 en in `dalton-lesfiche.html`.
 
 **Schrijfregels:** één handeling per regel, werkwoord vooraan · vaste woorden (*werkdocument*,
 *deel A*, *deel B*, *koprij*, *tabelkaart*) · knopnamen in een grijs vakje, nagelezen in de
@@ -244,11 +258,12 @@ bevat alleen extra uitleg.
   één *Hulp nodig?* · rij 1 als uitgewerkt voorbeeld, ook op de lespagina · de hulpvolgorde
   *theoriekaart → Hulp nodig? → buur → leraar* · verlengde instructie aan de instructietafel.
 - **Minimumroute:** deel A volledig (stap 2 tot 4) en in deel B een tabel met de koprij en minstens
-  drie jobstudenten. De vragen 1 tot 3 mogen in de keuzewerktijd.
+  drie jobstudenten. De vragen 1 tot 3 mogen later, vóór de deadline.
 - **Voor wie snel klaar is:** de extra stap, pas na het inleveren, telt niet mee.
 - **Taalvaardigheid:** het briefje heeft zes korte zinnen met telkens dezelfde opbouw (*Om … uur
   brengt … naar poort …*); rij 1 toont hoe je die zin opsplitst.
-- **Thuis op een Chromebook:** alles gebeurt in de browser; er is niets toestelafhankelijks.
+- **Thuis of op een ander toestel:** alles gebeurt in de browser; er is niets toestelafhankelijks.
+  De vinkjes op de lespagina zijn gekoppeld aan die ene computer.
 
 ## 21. Controle van begrip
 
@@ -292,7 +307,8 @@ in plaats van een tabel · deel B zonder tabel · lege rijen laten staan.
 - De leerling leest op de **lespagina** en werkt in de eigen kopie van **TV4_Tabellen**.
 - Alleen het werkdocument wordt ingeleverd, via *Inleveren*.
 - **Deadline:** vrijdag 2 oktober 2026 om 20.00 uur.
-- Niet klaar? Toch inleveren, met onder *Privéreacties* tot welke stap de leerling kwam.
+- Niet klaar? Toch inleveren. De leraar zegt dat mondeling aan het einde van de les; het staat
+  bewust niet op de lespagina (wie niet klaar is, leest het toch niet meer).
 
 ## 25. Privacy, auteursrecht en digitale veiligheid
 
@@ -340,4 +356,5 @@ in plaats van een tabel · deel B zonder tabel · lege rijen laten staan.
 - *Hulp nodig?* en een zelftest met directe feedback.
 - Screenshot-plaatsen die alleen verschijnen als het bestand bestaat (`index.html?leraar`).
 - Eén rustige melding wanneer alle 21 taken afgevinkt zijn.
-- Geen toestelkeuze, geen logins, tracking of externe scripts.
+- Geen toestelkeuze (alle klassen werken in lokaal 18 op Windows 11), geen logins, tracking of
+  externe scripts.
