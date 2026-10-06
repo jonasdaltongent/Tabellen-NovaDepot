@@ -9,7 +9,7 @@ kader op elke plaats, met de bestandsnaam erbij.
 | Bestandsnaam | Wat moet erop staan | Stap |
 |---|---|---|
 | `stap3-rechtsklik-tabel.png` | Het rechtermuisknopmenu in een cel van een tabel, met **Rij boven invoegen**, **Rij onder invoegen**, **Kolom links/rechts invoegen** en **Rij verwijderen**. | 3 |
-| `stap4-achtergrondkleur.png` | De koprij geselecteerd en in de werkbalk **Achtergrondkleur** open, met de kleuren. | 4 |
+| `stap4-achtergrondkleur.png` | **Staat er al** (jouw schermafbeelding van 06-10-2026): het emmertje **Achtergrondkleur** rechts in de werkbalk, rood omkaderd. | 4 |
 | `knop-uitlijnen.png` | **Staat er al** (jouw schermafbeelding uit les 03): de knop **Uitlijnen** opengeklapt. | 4 |
 
 ## Waar op letten

@@ -48,8 +48,11 @@ vensters schikken, kiezen ze zelf: de pagina zegt er niets over.
 
 - De **theoriekaart** heeft tien kaartjes, met een kleine voorbeeldtabel waarin de koprij, een rij,
   een kolom en een cel elk een eigen kleur én een uitleg in woorden krijgen.
-- **Stap 5** toont de **tabelkaart** van NovaDepot (zoals de huisstijlkaart in les 03): de leerling
-  maakt de deelnemerslijst met alleen die kaart.
+- **Stap 5** toont de **tabelkaart** van NovaDepot (zoals de huisstijlkaart in les 03) en, sinds
+  06-10-2026 op jouw vraag, een stappenplan van zes handelingen. De leerling kijkt de tabel na met de
+  kaart.
+- **Stap 4** toont jouw schermafbeelding van het emmertje **Achtergrondkleur** (06-10-2026): die knop
+  staat rechts in de werkbalk bij de tabelknoppen en verschijnt pas als er cellen geselecteerd zijn.
 - **Alleen Windows 11**: alle klassen werken in lokaal 18. Alles gebeurt in de browser; de pagina
   vraagt niet naar het toestel.
 - **Classroom is het vertrekpunt**: de leerlingen starten elke les in Classroom en vinden daar de

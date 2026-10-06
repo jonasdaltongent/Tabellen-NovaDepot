@@ -21,8 +21,10 @@ overgenomen uit `Leerplannen 2de graad TOINFO.md` en daar automatisch mee vergel
 > **5 minuten**, zo werk je verder), daarna werken de leerlingen **40 minuten** zelfstandig met de
 > lespagina: de keuzewerktijd. De "Wij doen"-stap zit in de demo: de leraar vult
 > **rij 1** van de tabel in (die staat al ingevuld in het werkdocument) en toont het
-> rechtsklikmenu en het selecteren van de koprij. Deel B (zelf een tabel maken, alleen met de
-> tabelkaart) is het zelfstandige "Jij doet".
+> rechtsklikmenu en het selecteren van de koprij. Deel B (zelf een tabel maken) is het
+> zelfstandige "Jij doet": op vraag van de leraar (06-10-2026) met een stappenplan van zes
+> handelingen op de lespagina, en de tabelkaart om na te kijken. Alleen met de tabelkaart bleek te
+> moeilijk.
 
 > [!NOTE]
 > **Aangepast aan versie 2.1 van de lesplanner (27-09-2026).** Alle klassen werken vanaf 28-09-2026
@@ -131,7 +133,7 @@ ondersteunend doel noemt.
    een kolom toevoegen. *(toepassen, procedurele kennis)*
 4. De leerlingen maken een tabel op volgens de tabelkaart: koprij vet en gekleurd, getallen
    gecentreerd, kolommen op de juiste breedte. *(toepassen, procedurele kennis)*
-5. De leerlingen maken zelfstandig een deelnemerslijst als tabel, met alleen de tabelkaart.
+5. De leerlingen maken zelfstandig een deelnemerslijst als tabel, met een stappenplan en de tabelkaart.
    *(toepassen, procedurele kennis, transfer)*
 6. De leerlingen leggen uit waarom een tabel beter is dan spaties of tabs om kolommen te maken.
    *(begrijpen, conceptuele kennis)*
@@ -220,7 +222,7 @@ Verwachte resultaten en antwoorden: `README.md` §4.
 | **Keuzewerktijd** | **40'** | Dia 7 blijft staan. Stap 1 tot 6, inleveren inbegrepen (stap 6: zelftest van 3 vragen, checklist, vraag 4, *Inleveren*). Eerste rondgang: werkt iedereen in de eigen kopie, en staat er in elke cel maar één ding? Tweede rondgang rond stap 3: de verkeerde rij verwijderd? Daarna gerichte feedback en verlengde instructie aan de instructietafel. In de laatste minuut: dia 8 (*waarom een tabel en geen spaties?*) en mondeling: wie niet klaar is, levert toch in. |
 
 Wat **niet** wordt voorgedaan: centreren, de kolombreedte slepen en *Invoegen › Tabel*. Die staan
-op de lespagina; *Invoegen › Tabel* is precies wat de leerling in deel B zelfstandig toepast.
+op de lespagina; *Invoegen › Tabel* past de leerling in deel B zelf toe, met het stappenplan.
 
 ## 18–19. Zelfstandige verwerking en stappenplan
 
@@ -238,8 +240,8 @@ vijf vaste blokken per stap.
 
 *Deel B en inleveren*
 
-5. **Zelf een tabel maken** — titel, *Invoegen › Tabel* (3 × 6), deelnemerslijst invullen en
-   opmaken met alleen de tabelkaart; vraag 3. (12')
+5. **Zelf een tabel maken** — titel (vet), *Invoegen › Tabel* (3 × 6), deelnemerslijst invullen,
+   koprij opmaken, nakijken met de tabelkaart; vraag 3. Zes handelingen, stap voor stap. (12')
 6. **Controleren en inleveren** — zelftest, checklist, vraag 4, *Inleveren*. (5')
 7. **Extra (optioneel)** — alfabetisch sorteren (koprij vastzetten + *Tabel sorteren*) en hogere
    rijen om te tekenen (*Tabelopties*).
